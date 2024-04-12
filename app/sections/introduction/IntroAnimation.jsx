@@ -11,6 +11,7 @@ export function WelcomeAnimation() {
 
 	return (
 		<div
+			className="absolute z-0 inset-x-0 mx-auto w-5/6 md:static"
 			ref={ref}
 			style={{
 				transform: isInView ? "none" : "translateX(100px)",
@@ -19,6 +20,7 @@ export function WelcomeAnimation() {
 			}}
 		>
 			<svg
+
 				className="BgAnimation__svg"
 				viewBox="0 0 602 602"
 				fill="none"
