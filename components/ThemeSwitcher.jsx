@@ -5,10 +5,13 @@ import { BsMoon, BsSun } from "react-icons/bs";
 import { useEffect, useState } from "react";
 import { domAnimation, LazyMotion, m } from "framer-motion";
 import { animate, exit, initial, transition } from "utils";
+import { MobileMenu } from "./MobileMenu";
+import { useMediaQuery } from "utils";
 
 export const ThemeSwitcher = () => {
 	const [mounted, setMounted] = useState(false);
 	const { theme, setTheme, systemTheme } = useTheme();
+	const isMobile = useMediaQuery();
 
 	const currentTheme = theme === "system" ? systemTheme : theme;
 
@@ -20,6 +23,7 @@ export const ThemeSwitcher = () => {
 
 	return (
 		<LazyMotion features={domAnimation}>
+			{isMobile ? <MobileMenu /> : <></>}
 			<m.button
 				onClick={() => setTheme(currentTheme === "dark" ? "light" : "dark")}
 				initial={initial}
