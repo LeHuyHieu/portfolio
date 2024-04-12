@@ -14,9 +14,9 @@ export const AppMetadata = {
 	},
 	keywords: [
 		"Jack Lee",
-		"Jack Lee - software developer",
+		"Jack Lee - web developer",
 		"Frontend developer",
-		"Flutter developer",
+		"Backend developer",
 		"Portfolio website",
 		"Frontend Developer Portfolio"
 	],
