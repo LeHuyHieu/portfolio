@@ -1,6 +1,6 @@
 const author = "Jack Lee";
 const description =
-	"A software developer from Vietnam is an experienced website developer with years of experience in designing and creating websites, using languages such as PHP, CSS, HTML, JAVASCRIPT, and frameworks like Laravel, Vue.js, Angular, and more.";
+	"A skilled web developer hailing from Vietnam, I boast years of expertise in crafting captivating websites. Fluent in languages like PHP, CSS, HTML, JavaScript, and well-versed in frameworks such as Laravel, Vue.js, Angular.";
 const url = "https://portfolio-eight-lime-43.vercel.app";
 export const AppMetadata = {
 	metadataBase: new URL("https://portfolio-eight-lime-43.vercel.app/"),
