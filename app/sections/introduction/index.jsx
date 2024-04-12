@@ -1,17 +1,17 @@
 "use client";
 
 import { useEffect, useState, useRef } from "react";
-import Link from "next/link";
+// import Link from "next/link";
 import { LazyMotion, domAnimation, useInView } from "framer-motion";
 import { WelcomeAnimation } from "./IntroAnimation";
-import { useScrollTo } from "hooks";
+// import { useScrollTo } from "hooks";
 import { useMediaQuery } from "utils";
 
 export function WelcomeSection() {
 	const ref = useRef(null);
 	const introRef = useRef(null);
 	const isInView = useInView(ref, { once: true });
-	const { scrollToEl } = useScrollTo();
+	// const { scrollToEl } = useScrollTo();
 	const isTabletUp = useMediaQuery("min-width: 768px");
 
 	let [count, setCount] = useState(0);
@@ -21,7 +21,7 @@ export function WelcomeSection() {
 		"develop websites using PHP(Laravel)"
 	]);
 
-	const onClick = (e) => scrollToEl(e);
+	// const onClick = (e) => scrollToEl(e);
 
 	useEffect(() => {
 		let interval = setInterval(() => {
