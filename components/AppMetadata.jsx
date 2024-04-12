@@ -1,9 +1,9 @@
-const author = "Vasile Novatchii";
+const author = "Jack Lee";
 const description =
-	"Software developer from Moldova, Republic of, who loves to develop beautiful websites, single page applications, customer relationship management or code from scratch using React and Next.js";
-const url = "https://vasile-novatchii.netlify.app";
+	"A software developer from Vietnam is an experienced website developer with years of experience in designing and creating websites, using languages such as PHP, CSS, HTML, JAVASCRIPT, and frameworks like Laravel, Vue.js, Angular, and more.";
+const url = "https://portfolio-eight-lime-43.vercel.app";
 export const AppMetadata = {
-	metadataBase: new URL("https://vasile-novatchii.netlify.app/"),
+	metadataBase: new URL("https://portfolio-eight-lime-43.vercel.app/"),
 	title: {
 		default: `Portfolio | ${author}`,
 		template: `%s | ${author}`
@@ -13,8 +13,8 @@ export const AppMetadata = {
 		icon: "/favicon.png"
 	},
 	keywords: [
-		"Vasile Novatchii",
-		"Vasile Novatchii - software developer",
+		"Jack Lee",
+		"Jack Lee - software developer",
 		"Frontend developer",
 		"Flutter developer",
 		"Portfolio website",
@@ -30,13 +30,13 @@ export const AppMetadata = {
 		siteName: `${author} | Portfolio`,
 		images: [
 			{
-				url: "https://vasile-novatchii.netlify.app/screenshot.webp",
+				url: "https://portfolio-eight-lime-43.vercel.app/screenshot.png",
 				width: 800,
 				height: 600,
 				alt: "My personal portfolio website"
 			},
 			{
-				url: "https://vasile-novatchii.netlify.app/screenshot.webp",
+				url: "https://portfolio-eight-lime-43.vercel.app/screenshot.png",
 				width: 1800,
 				height: 1600,
 				alt: "My personal portfolio website"
