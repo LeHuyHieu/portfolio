@@ -1,6 +1,6 @@
 "use client";
 
-import { Logo, Menu, ConnectMedia, ThemeSwitcher } from "components";
+import { Logo, ConnectMedia, ThemeSwitcher } from "components";
 import { useMediaQuery } from "utils";
 
 export function AppHeader() {
@@ -11,7 +11,7 @@ export function AppHeader() {
 			<div className="container-md">
 				<div className="flex justify-between items-center gap-3">
 					<Logo />
-					{isMobile ? <></> : <Menu />}
+					{/* {isMobile ? <></> : <Menu />} */}
 					<div className="flex items-center gap-5">
 						{!isMobile && <ConnectMedia />}
 						<ThemeSwitcher />

@@ -7,6 +7,7 @@ import { domAnimation, LazyMotion, m } from "framer-motion";
 import { animate, exit, initial, transition } from "utils";
 import { MobileMenu } from "./MobileMenu";
 import { useMediaQuery } from "utils";
+import { Menu } from "./Menu";
 
 export const ThemeSwitcher = () => {
 	const [mounted, setMounted] = useState(false);
@@ -23,7 +24,7 @@ export const ThemeSwitcher = () => {
 
 	return (
 		<LazyMotion features={domAnimation}>
-			{isMobile ? <MobileMenu /> : <></>}
+			{isMobile ? <MobileMenu /> : <Menu />}
 			<m.button
 				onClick={() => setTheme(currentTheme === "dark" ? "light" : "dark")}
 				initial={initial}
