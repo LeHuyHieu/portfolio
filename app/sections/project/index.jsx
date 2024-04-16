@@ -3,12 +3,12 @@ import { HeadingDivider } from "components";
 import { useState } from 'react';
 import Image from 'next/image';
 import { PROJECTS } from "../../../constants";
-
-// import fullscreen from '../../../public/screenshot.png';
+import Loading from "app/loading";
 
 export function ProjectsSection() {
 
 	const [modalStates, setModalStates] = useState(Array(PROJECTS.length).fill(false));
+	const [loadedStates, setLoadedStates] = useState(Array(PROJECTS.length).fill(false));
 
 	const openModal = (index) => {
 		const newModalStates = [...modalStates];
@@ -21,6 +21,12 @@ export function ProjectsSection() {
 		newModalStates[index] = false;
 		setModalStates(newModalStates);
 	};
+
+	const handleImageLoad = (index) => {
+        const newLoadedStates = [...loadedStates];
+        newLoadedStates[index] = true;
+        setLoadedStates(newLoadedStates);
+    };
 
 	return (
 		<LazyMotion features={domAnimation}>
@@ -60,7 +66,8 @@ export function ProjectsSection() {
 											</div>
 											<div className="p-4 md:p-5 space-y-4">
 												<div className="card-image pic mb-2">
-													<Image src={project.image_scroll} className="rounded" alt="" />
+													{!loadedStates[index]  && <Loading />}
+													<Image onLoad={() => handleImageLoad(index)} src={project.image_scroll} className="rounded" alt="" />
 												</div>
 												<ul className="list-disc pl-6">
 													{project.main_features.map((main_feature, featureIndex) => (
