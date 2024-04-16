@@ -1,13 +1,15 @@
 "use client";
 
 import { useEffect, useState, useRef } from "react";
-// import Link from "next/link";
+import Link from "next/link";
+import { useScrollTo } from "hooks";
 import { LazyMotion, domAnimation, useInView } from "framer-motion";
 import { WelcomeAnimation } from "./IntroAnimation";
 
 export function WelcomeSection() {
 	const ref = useRef(null);
 	const introRef = useRef(null);
+	const { scrollToEl } = useScrollTo();
 	const isInView = useInView(ref, { once: true });
 
 	let [count, setCount] = useState(0);
@@ -16,6 +18,8 @@ export function WelcomeSection() {
 		"build interactive UI using HTML, CSS, JAVASCRIPT,...",
 		"develop websites using PHP(Laravel)"
 	]);
+
+	const onClick = (e) => scrollToEl(e);
 
 	useEffect(() => {
 		let interval = setInterval(() => {
@@ -104,7 +108,7 @@ export function WelcomeSection() {
 									transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
 								}}
 							>
-								{/* <Link
+								<Link
 									href="#projects"
 									onClick={onClick}
 									tabIndex="0"
@@ -112,7 +116,7 @@ export function WelcomeSection() {
 									aria-label="Latest projects"
 								>
 									See my latest projects
-								</Link> */}
+								</Link>
 							</div>
 						</div>
 					</div>

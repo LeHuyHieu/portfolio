@@ -10,4 +10,24 @@
 	.flex-center {
 		@apply flex items-center justify-center;
 	}
+	.pic {
+		height: 400px;
+		overflow-y: scroll;
+		margin: 0 auto;
+		display: inline-block;
+		position: relative;
+		cursor: pointer;
+		width: 100%;
+	}
+	.pic::-webkit-scrollbar {
+		width: 10px;
+	}
+	.pic::-webkit-scrollbar-thumb {
+		background: #b4b4b4; 
+		border-radius: 10px;
+	}
+	.pic::-webkit-scrollbar-track {
+		box-shadow: inset 0 0 5px rgb(226, 226, 226); 
+		border-radius: 10px;
+	}
 }
