@@ -17,6 +17,7 @@
 		cursor: pointer;
 		width: 100%;
 		overflow: hidden;
+		max-height: 450px;
 	}
 	.pic::-webkit-scrollbar {
 		width: 10px;
@@ -48,6 +49,11 @@
 		font-size: 25px;
 		transition: .3s;
 		border-radius: .25rem;
+	}
+	.hover-show img {
+		height: 450px;
+		width: 100%;
+		object-fit: cover;
 	}
 	.hover-show[data-fancybox="true"]:hover .show-text {
 		transform: translate(-50%, -50%);
