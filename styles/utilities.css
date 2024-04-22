@@ -11,13 +11,12 @@
 		@apply flex items-center justify-center;
 	}
 	.pic {
-		height: 400px;
-		overflow-y: scroll;
 		margin: 0 auto;
 		display: inline-block;
 		position: relative;
 		cursor: pointer;
 		width: 100%;
+		overflow: hidden;
 	}
 	.pic::-webkit-scrollbar {
 		width: 10px;
@@ -29,5 +28,28 @@
 	.pic::-webkit-scrollbar-track {
 		box-shadow: inset 0 0 5px rgb(226, 226, 226); 
 		border-radius: 10px;
+	}
+	.hover-show[data-fancybox="true"] {
+		position: relative;
+	}
+	.hover-show[data-fancybox="true"] .show-text {
+		position: absolute;
+		width: 100%;
+		top: 50%;
+		left: 50%;
+		text-align: center;
+		transform: translate(-50%, 100%);
+		background: rgba(0, 0, 0, .2);
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: #fff;
+		font-size: 25px;
+		transition: .3s;
+		border-radius: .25rem;
+	}
+	.hover-show[data-fancybox="true"]:hover .show-text {
+		transform: translate(-50%, -50%);
 	}
 }

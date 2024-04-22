@@ -1,20 +1,33 @@
-import imageJob from "../public/assets/projects/screencapture-job.png";
-import imageJobScroll from "../public/assets/projects/screencapture-job-full.png";
-import imageEcommVue from "../public/assets/projects/screencapture-ecomm-vue.png";
-import imageEcommVueScroll from "../public/assets/projects/screencapture-ecomm-vue-full.png";
-import imageEcommAngular from "../public/assets/projects/screencapture-ecomm-angular.png";
-import imageEcommAngularScroll from "../public/assets/projects/screencapture-ecomm-angular-full.png";
-import imageEcommPhp from "../public/assets/projects/screencapture-ecomm-php.png";
-import imageEcommPhpScroll from "../public/assets/projects/screencapture-ecomm-php-full.png";
-import imageNewPhp from "../public/assets/projects/screencapture-new-php.png";
-import imageNewPhpScroll from "../public/assets/projects/screencapture-new-php-full.png";
+// import imageJob from "/assets/projects/screencapture-job.png";
+// import imageJobScroll from "/assets/projects/screencapture-job-full.png";
+// import imageEcommVue from "/assets/projects/screencapture-ecomm-vue.png";
+// import imageEcommVueScroll from "/assets/projects/screencapture-ecomm-vue-full.png";
+// import imageEcommAngular from "/assets/projects/screencapture-ecomm-angular.png";
+// import imageEcommAngularScroll from "/assets/projects/screencapture-ecomm-angular-full.png";
+// import imageEcommPhp from "/assets/projects/screencapture-ecomm-php.png";
+// import imageEcommPhpScroll from "/assets/projects/screencapture-ecomm-php-full.png";
+// import imageNewPhp from "/assets/projects/screencapture-new-php.png";
+// import imageNewPhpScroll from "/assets/projects/screencapture-new-php-full.png";
 
 export const PROJECTS = [
     {
         id: 1,
         name: "ECOMMERCE VUE",
-        image: imageEcommVue,
-        image_scroll: imageEcommVueScroll,
+        image: '/assets/projects/screencapture-ecomm-vue.png',
+        image_list: [
+            '/assets/projects/screencapture-ecomm-vue-1.png',
+            '/assets/projects/screencapture-ecomm-vue-2.png',
+            '/assets/projects/screencapture-ecomm-vue-3.png',
+            '/assets/projects/screencapture-ecomm-vue-4.png',
+            '/assets/projects/screencapture-ecomm-vue-5.png',
+            '/assets/projects/screencapture-ecomm-vue-6.png',
+            '/assets/projects/screencapture-ecomm-vue-7.png',
+            '/assets/projects/screencapture-ecomm-vue-8.png',
+            '/assets/projects/screencapture-ecomm-vue-9.png',
+            '/assets/projects/screencapture-ecomm-vue-10.png',
+            '/assets/projects/screencapture-ecomm-vue-11.png',
+            '/assets/projects/screencapture-ecomm-vue-12.png',
+        ],
         desc: "Display product details, display product list, add to cart, checkout, order status, register, login, CRUD products, ... ",
         main_features: [
             "Display Product Details: Allows users to view detailed information about a product such as images, descriptions, prices, ratings, and reviews from other users.",
@@ -40,8 +53,19 @@ export const PROJECTS = [
     {
         id: 2,
         name: "ECOMMERCE ANGULAR",
-        image: imageEcommAngular,
-        image_scroll: imageEcommAngularScroll,
+        image: '/assets/projects/screencapture-ecomm-angular.png',
+        image_list: [
+            '/assets/projects/screencapture-ecomm-angular-1.png',
+            '/assets/projects/screencapture-ecomm-angular-2.png',
+            '/assets/projects/screencapture-ecomm-angular-3.png',
+            '/assets/projects/screencapture-ecomm-angular-4.png',
+            '/assets/projects/screencapture-ecomm-angular-5.png',
+            '/assets/projects/screencapture-ecomm-angular-6.png',
+            '/assets/projects/screencapture-ecomm-angular-7.png',
+            '/assets/projects/screencapture-ecomm-angular-8.png',
+            '/assets/projects/screencapture-ecomm-angular-9.png',
+            '/assets/projects/screencapture-ecomm-angular-10.png',
+        ],
         desc: "Display product details, display product list, add to cart, checkout, order status, register, login, CRUD products, ... ",
         main_features: [
             "Display Product Details: Allows users to view detailed information about a product such as images, descriptions, prices, ratings, and reviews from other users.",
@@ -69,8 +93,22 @@ export const PROJECTS = [
     {
         id: 3,
         name: "ECOMMERCE PHP",
-        image: imageEcommPhp,
-        image_scroll: imageEcommPhpScroll,
+        image: '/assets/projects/screencapture-ecomm-php.png',
+        image_list: [
+            '/assets/projects/screencapture-ecomm-php-1.png',
+            '/assets/projects/screencapture-ecomm-php-2.png',
+            '/assets/projects/screencapture-ecomm-php-3.png',
+            '/assets/projects/screencapture-ecomm-php-4.png',
+            '/assets/projects/screencapture-ecomm-php-5.png',
+            '/assets/projects/screencapture-ecomm-php-6.png',
+            '/assets/projects/screencapture-ecomm-php-7.png',
+            '/assets/projects/screencapture-ecomm-php-8.png',
+            '/assets/projects/screencapture-ecomm-php-9.png',
+            '/assets/projects/screencapture-ecomm-php-10.png',
+            '/assets/projects/screencapture-ecomm-php-11.png',
+            '/assets/projects/screencapture-ecomm-php-12.png',
+            '/assets/projects/screencapture-ecomm-php-13.png',
+        ],
         desc: "Search, shopping cart, order management system, reviews, comments, ... ",
         main_features: [
             "Search: Allows users to search for specific items or content within the website easily.",
@@ -99,8 +137,20 @@ export const PROJECTS = [
     {
         id: 4,
         name: "NEWSPAPER LARAVEL",
-        image: imageNewPhp,
-        image_scroll: imageNewPhpScroll,
+        image: '/assets/projects/screencapture-new-php.png',
+        image_list: [
+            '/assets/projects/screencapture-new-php-1.png',
+            '/assets/projects/screencapture-new-php-2.png',
+            '/assets/projects/screencapture-new-php-3.png',
+            '/assets/projects/screencapture-new-php-4.png',
+            '/assets/projects/screencapture-new-php-5.png',
+            '/assets/projects/screencapture-new-php-6.png',
+            '/assets/projects/screencapture-new-php-7.png',
+            '/assets/projects/screencapture-new-php-8.png',
+            '/assets/projects/screencapture-new-php-9.png',
+            '/assets/projects/screencapture-new-php-10.png',
+            '/assets/projects/screencapture-new-php-11.png',
+        ],
         desc: "The website features multi-sector news display, categorizing news into dierent sections, and enables user registration and login, ...",
         main_features: [
             "Multi-sector News Display: The website showcases news across various sectors, allowing users to explore diverse topics conveniently.",
@@ -125,8 +175,26 @@ export const PROJECTS = [
     {
         id: 5,
         name: "JOBSEARCH PHP",
-        image: imageJob,
-        image_scroll: imageJobScroll,
+        image: '/assets/projects/screencapture-job.png',
+        image_list: [
+            '/assets/projects/screencapture-job-1.png',
+            '/assets/projects/screencapture-job-2.png',
+            '/assets/projects/screencapture-job-3.png',
+            '/assets/projects/screencapture-job-4.png',
+            '/assets/projects/screencapture-job-5.png',
+            '/assets/projects/screencapture-job-6.png',
+            '/assets/projects/screencapture-job-7.png',
+            '/assets/projects/screencapture-job-8.png',
+            '/assets/projects/screencapture-job-9.png',
+            '/assets/projects/screencapture-job-10.png',
+            '/assets/projects/screencapture-job-11.png',
+            '/assets/projects/screencapture-job-12.png',
+            '/assets/projects/screencapture-job-13.png',
+            '/assets/projects/screencapture-job-14.png',
+            '/assets/projects/screencapture-job-15.png',
+            '/assets/projects/screencapture-job-16.png',
+            '/assets/projects/screencapture-job-17.png',
+        ],
         desc: "The website features multi-sector news display, categorizing news into dierent sections, and enables user registration and login, ...",
         main_features: [
             "Job Search: Allows users to search for job openings based on keywords, location, and industry preferences, providing tailored results matching their criteria.",
